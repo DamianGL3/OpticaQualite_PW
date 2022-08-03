@@ -108,9 +108,46 @@ export function addMaterial() {
             //GENERA LA CLAVE UNICA DE CLIENTE
             let primero = document.getElementById("txtNombre").value;
             let final = "OQM" + primero;
-
+            
+            if (nombre == "" && precio_cObtenido== "" && precio_vObtenido== "") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener los campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })   
+            }
+            else if (nombre=="") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Nombre o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+            else if (precio_cObtenido=="") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Precio de Compra o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+            else if (precio_vObtenido=="") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Precio de venta o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
             //form.submit();
-            let material = {};
+            else {
+                let material = {};
 
             material.numeroUnicoMaterial = final;
             material.nombre = nombre;
@@ -122,7 +159,7 @@ export function addMaterial() {
             materiales.push(material);
             clean();
             notificacionAñadir();
-
+        }
         } else if (result.isDenied) {
             Swal.fire('Los cambios no se guardaron', '', 'info')
         }
@@ -200,7 +237,7 @@ export function leerDatos(index) {
     document.getElementById("txtNombre").disabled = false;
     document.getElementById("txtPrecioC").disabled = false;
     document.getElementById("txtPrecioV").disabled = false;
-    document.getElementById("txtEstatus").disabled = false;
+    
     //Lee los datos
 
     document.getElementById("txtNombre").value = txtNombre;
@@ -241,7 +278,45 @@ export function updateMaterial() {
             precio_v = "$" + precio_vObtenido;
 
             estatus = document.getElementById("txtEstatus").value;
-
+            
+             if (nombre == "" && precio_cObtenido== "" && precio_vObtenido== "") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener los campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })   
+            }
+            else if (nombre=="") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Nombre o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+            else if (precio_cObtenido=="") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Precio de Compra o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+            else if (precio_vObtenido=="") {
+                 Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Precio de venta o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+            //form.submit();
+            else {
             let material = {};
             material.numeroUnicoMaterial = numeroUnicoMaterial;
             material.nombre = nombre;
@@ -251,7 +326,9 @@ export function updateMaterial() {
             materiales[indexmaterialeseleccionado] = material;
             clean();
             notificacionActualización();
-        } else if (result.isDenied) {
+        } 
+    }
+        else if (result.isDenied) {
             Swal.fire('Los cambios no se guardaron', '', 'info')
         }
     })
