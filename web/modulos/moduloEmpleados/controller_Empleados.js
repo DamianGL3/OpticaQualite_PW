@@ -101,7 +101,7 @@ export function addEmpleado() {
     }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-            Swal.fire('Saved!', '', 'success')
+            Swal.fire('Oops.. Ha ocurrido un error!', '', 'error')
             //Atributos
             let numero_unico_empleado,
                     nombre,
@@ -144,7 +144,7 @@ export function addEmpleado() {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'No puedes tener el nombre vacío!',
+                    title: 'No puedes tener el Nombre o más campos vacíos!',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -152,7 +152,7 @@ export function addEmpleado() {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'No puedes tener el apellido vacío!',
+                    title: 'No puedes tener el Apellido Paterno o más campos vacíos!',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -160,7 +160,7 @@ export function addEmpleado() {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'No puedes tener el Apellido Paterno vacío!',
+                    title: 'No puedes tener el Apellido Materno o más campos vacíos!',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -168,7 +168,7 @@ export function addEmpleado() {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'No puedes tener el Telefono vacío!',
+                    title: 'No puedes tener el Telefono o más campos vacíos!',
                     showConfirmButton: false,
                     timer: 1500
                 })
