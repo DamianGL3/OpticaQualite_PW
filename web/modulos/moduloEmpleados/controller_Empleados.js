@@ -408,6 +408,90 @@ export function updateEmpleado() {
             rfc = document.getElementById("txtRfc").value;
             genero = document.getElementById("txtGenero").value;
             estatus = document.getElementById("txtEstatus").value;
+            
+            if (nombre === "" && apellido_paterno === "" && apellido_materno === "" && rfc === "" && telefono === "" &&
+                    telefono_movil === "" && usuario === "" && password === "" && correo_electronico === ""){
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener los campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })   
+            }
+            else if (nombre === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Nombre o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (apellido_paterno === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Apellido Paterno o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (apellido_materno === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Apellido Materno o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (telefono === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Telefono o más campos vacíos!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (telefono_movil === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Telefono Movil vacío!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (usuario === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Usuario  vacío!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (password === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener la Contraseña vacía!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (correo_electronico === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el Correo Electronico vacío!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else if (rfc === "") {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No puedes tener el RFC vacío!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            } else {
 
             //lo guarda en Empleado
             let empleado = {};
@@ -427,6 +511,7 @@ export function updateEmpleado() {
             empleados[indexempleadoSeleccionado] = empleado;
             clean();
             notificacionActualización();
+            }
         } else if (result.isDenied) {
             Swal.fire('Los cambios no se guardaron', '', 'info')
         }
