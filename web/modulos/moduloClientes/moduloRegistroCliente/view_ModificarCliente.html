@@ -1,0 +1,61 @@
+<!-- En los metodos ONCLICK es importante LEER el comentario de modulos.js -->
+<center>
+    <div class="card col-lg-5 m-4 p-4" style="border-color: white;">
+        <h2 class="text-center">Modificación de Clientes</h2>
+        <div class="row g-3" style="padding-bottom: 50px;">
+            <div class="col-md-6">
+                <label for="txtNumUnico" class="mt-2 ">Número unico del Cliente</label>
+                <input id="txtNumUnico" type="text"  readonly class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombre" class="mt-2">Nombre(s):</label>
+                <input id="txtNombre" type="text"  class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtApePaterno" class="mt-2">Apellido Paterno:</label>
+                <input id="txtApePaterno" type="text"  class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtApeMaterno" class="mt-2">Apellido Materno:</label>
+                <input id="txtApeMaterno" type="text"  class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label class="mt-2">Género:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtGenero" name="txtGenero" style="width: 190px; border-color: gray;" disabled>
+                    <option value="Masculino" >Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="txtRfc" class="mt-2 col-12">RFC:</label><br>
+                <input id="txtRfc" type="text"  class="mt-2" maxlength="13" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtTelefono" class="mt-2">Teléfono Fijo:</label>
+                <input id="txtTelefono" type="text"  class="mt-2" maxlength="10" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtMovil" class="mt-2">Teléfono Móvil:</label>
+                <input id="txtMovil" type="text"  class="mt-2" maxlength="10" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtCorreo" class="mt-2">Correo Electrónico:</label>
+                <input id="txtCorreo" type="text"  class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label class="mt-2">Estátus:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtEstatus" name="txtEstatus" style="width: 190px; border-color: gray;" disabled>
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloCliente.clean();" id="btnClean"><img src="../recursos/menu/clear.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg" onclick="moduloCliente.updateCliente();"  style="margin-left: 40px;" id="btnUpdate"><img src="../recursos/menu/refresh.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg" onclick="moduloCliente.deleteCliente();"  style="margin-left: 40px;" id="btnDelete"><img src="../recursos/menu/trash.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Eliminar</button>
+        </div>
+    </div>
+</center>

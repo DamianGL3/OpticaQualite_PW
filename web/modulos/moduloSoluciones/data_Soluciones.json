@@ -1,0 +1,33 @@
+[    
+    {
+        "nombre": "Limpiador", 
+        "marca": "Qualite", 
+        "dimensiones" : "50cm", 
+        "precio_c" : "$100",  
+        "precio_v" : "$200", 
+        "descripcion" : "limpia lentes",
+        "existencias" : "50 pz",
+        "estatus": "Activo"
+    },
+    {
+         "nombre": "Gotas", 
+        "marca": "Qualite", 
+        "dimensiones" : "5 ml", 
+        "precio_c" : "$150",  
+        "precio_v" : "$300", 
+        "descripcion" : "Gotas para ojos",
+        "existencias" : "10 pz",
+        "estatus": "Activo"
+    },
+    {
+       "nombre": "Aceite", 
+        "marca": "Qualite", 
+        "dimensiones" : "5 ml", 
+        "precio_c" : "$50",  
+        "precio_v" : "$100", 
+        "descripcion" : "Lubrica",
+        "existencias" : "20 pz",
+        "estatus": "Activo"
+    }
+
+]

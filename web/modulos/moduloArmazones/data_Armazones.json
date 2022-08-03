@@ -1,0 +1,14 @@
+[    
+    {
+    "nombre":"A1",
+    "precio_c":"$123",
+    "marca":"hugo",
+    "precio_v":"$125",
+    "modelo":"M1",
+    "existencias":20,
+    "color":"verde",
+    "dimensiones":"21x21",
+    "descripcion":"Lentes Bonitos",
+    "estatus":"Activo"
+    }
+]

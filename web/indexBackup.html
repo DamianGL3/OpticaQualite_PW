@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>IDENTIFÍCATE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="date" content="27/06/2022">
+        <meta name="copyright" content="2022-20223">
+        <meta name="group" content="DSM302">
+        <meta name="author" content="Componentes Unidos">
+        <link rel="canonical" href="localhost:8080/PGOpticaCualite2/"/>
+        <link rel="icon" href="recursos/Logo_Fondo_Transparente.png">
+        <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/Style.css"/>
+        <!-- METADATOS -->
+        <meta name="author" content="Componentes Unidos">
+        <meta name="date" content="10/07/2022">
+        <meta name="copyright" content="2022-20223">
+        <link rel="icon" href="../recursos/Logo_Fondo_Transparente.png">
+        <script src="JS/jquery.min.js"></script>
+    </head>
+
+    <body id="body" class="hiddenLogin" style="background-color: #242f3f;">
+
+        <div class="conteiner-fluid row d-flex justify-content-center mt-3">
+            <div class="card col-lg-5 p-5" style="border-radius: 22px">
+                <h2 class="text-center">
+                    IDENTIFÍCATE
+                </h2>
+                <div>
+                    <center>
+                        <img src="recursos/LogoQT.png" width="250" alt="Logo óptica"/>
+                    </center>
+                </div>
+                
+                <label class="mt-3" for='txtUser'><i>Usuario</i></label>
+                <input style="" id='txtUser' type='text' placeholder="Admin" required onkeypress="">
+                <label class="mt-3" for='txtPass'><i>Contraseña</i></label>
+                <input class="" id='txtPass' type='password' placeholder="Password" required>
+                <p id="passMsg" class="mt-2"style="color: red;"></p>
+                <button id="btnAñadir" style="border-radius: 10px" class='btn btn-dark mt-3' onclick="login()">Iniciar Sesión</button>
+               
+            </div>
+        </div>
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <script src="styles/js/bootstrap.min.js"></script>
+        <script src="JS/loadingLogin.js"></script>
+    </body>
+</html>

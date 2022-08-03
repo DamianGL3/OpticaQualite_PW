@@ -1,0 +1,34 @@
+<div class="card col-lg-12" style="margin-bottom: 10px; border-color: white;">
+    <center>
+        <div class="d-flex m-3">
+            <label for="txtBuscarlenteCG" class="form-label mx-3" style="border-style: solid; border-color: white;">Buscar lente de contacto Graduado</label>
+            <input type="text" id="txtBuscarLenteCG" placeholder="Ingrese cualquier campo...">
+            <button class="btn btn-primary mx-2" onclick="moduloLentesCG.buscarlente();">Buscar</button>
+            <button class="btn btn-danger mx-2" onclick="moduloLentesCG.loadTabla(),moduloLentesCG.boton()">Borrar Filtro</button>
+
+        </div>
+        <table class="table table-hover">
+            <thead class="table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Color</th>
+                    <th>Queratometria</th>
+                    <th>Fotografia</th>
+                    <th>Esfera D</th>
+                    <th>Esfera I</th>
+                    <th>Cilindro D</th>
+                    <th>Cilindro I</th>
+                    <th>Eje D</th>
+                    <th>Eje I</th>
+                    <th>Distancia interpupilar D</th>
+                    <th>Distancia interpupilar I</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblLentesCG">
+
+            </tbody>
+        </table>
+    </center>
+</div>

@@ -1,0 +1,34 @@
+[    
+    {
+        "nombre":"Lente Sin Graduación",
+        "marca":"Mapita",
+        "color":"Rosa",
+        "queratometria":"7.50mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Lentilla",
+        "marca":"Patito",
+        "color":"Verde",
+        "queratometria":"7.00mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Lente",
+        "marca":"Raton",
+        "color":"Azul",
+        "queratometria":"8.00mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Lente",
+        "marca":"Oso",
+        "color":"Rosa",
+        "queratometria":"7.50mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    }
+]

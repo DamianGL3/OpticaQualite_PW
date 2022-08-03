@@ -1,0 +1,34 @@
+<!-- En los metodos ONCLICK es importante LEER el comentario de modulos.js -->
+<center>
+    <div class="card col-lg-5 m-4 p-4" style="border-color: white;">
+        <h2 class="text-center">Gestión de Accesorios</h2>
+        <div class="row g-3" style="padding-bottom: 50px;">
+            <div class="col-md-6">
+                <label for="txtNombre" class="mt-2 ">Nombre:</label>
+                <input id="txtNombre" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtMarca" class="mt-2">Marca</label>
+                <input id="txtMarca" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrecioC" class="mt-2">Precio de Compra:</label>
+                <input id="txtPrecioC" type="number"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrecioV" class="mt-2">Precio de Venta</label>
+                <input id="txtPrecioV" type="number"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtExistencias" class="mt-2 col-12">Existencias:</label><br>
+                <input id="txtExistencias" type="number"  class="mt-2">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloAccesorios.addAccesorio();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloAccesorios.clean();" id="btnClean">Limpiar</button>
+
+        </div>
+    </div>
+</center>

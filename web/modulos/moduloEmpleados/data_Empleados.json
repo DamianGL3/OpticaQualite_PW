@@ -1,0 +1,58 @@
+[    
+    {
+        "nombre": "Pedro Maria Iniesta", 
+        "apellido_paterno": "López", 
+        "apellido_materno" : "López", 
+        "genero" : "Masculino", 
+        "rfc" : "HSSJ2311977W1", 
+        "telefono" : "4771241631", 
+        "telefono_movil" : "4770974834",
+        "correo_electronico" : "PedroMaria@gmail.com", 
+        "numero_unico_empleado" : "8d097b2689a536dcbf61c21198a5e536c020ca7efa52e68fc561010ee1124d2a",
+        "usuario": "PedroEmpleado",
+        "password" : "Pedro1234$",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Juan", 
+        "apellido_paterno": "Castillo", 
+        "apellido_materno" : "Flores", 
+        "genero" : "Masculino", 
+        "rfc" : "CAFJ9602498926", 
+        "telefono" : "4589423256", 
+        "telefono_movil" : "4798621437",
+        "correo_electronico" : "castilloj90@gmail.com", 
+        "numero_unico_empleado" : "",
+        "usuario": "JuanQualite",
+        "password" : "Juan1234$",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Daniela", 
+        "apellido_paterno": "Alonso", 
+        "apellido_materno" : "Flores", 
+        "genero" : "Femenino", 
+        "rfc" : "ALFD2502483426", 
+        "telefono" : "4798631256", 
+        "telefono_movil" : "4796325852",
+        "correo_electronico" : "daniflores@gmail.com", 
+        "numero_unico_empleado" : "",
+        "usuario": "DanielaQualite",
+        "password" : "Daniela1234$",
+        "estatus": "Inactivo"
+    },
+    {
+        "nombre": "Carlos", 
+        "apellido_paterno": "Romero", 
+        "apellido_materno" : "Ramirez", 
+        "genero" : "Masculino", 
+        "rfc" : "RORC800229876", 
+        "telefono" : "4584569874", 
+        "telefono_movil" : "5423698751",
+        "correo_electronico" : "romero154@gmail.com", 
+        "numero_unico_empleado" : "",
+        "usuario": "CarlosQualite",
+        "password" : "Carlos1234$",
+        "estatus": "Activo"
+    }
+]

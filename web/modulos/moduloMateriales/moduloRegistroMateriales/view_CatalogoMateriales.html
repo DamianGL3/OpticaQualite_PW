@@ -1,0 +1,24 @@
+<div class="card col-lg-12" style="margin-bottom: 10px; border-color: white;">
+    <center>
+        <div class="d-flex m-3">
+            <label for="txtBuscarMaterial" class="form-label mx-3" style="border-style: solid; border-color: white;">Buscar Material</label>
+            <input type="text" id="txtBuscarMaterial" placeholder="Ingrese cualquier campo...">
+            <button class="btn btn-primary mx-2" onclick="moduloMateriales.searchMaterial();">Buscar</button>
+            <button class="btn btn-danger mx-2" onclick="moduloMateriales.loadTabla(), moduloMateriales.boton()">Borrar Filtro</button>
+        </div>
+        <table class="table table-hover">
+            <thead class="table">
+                <tr>
+                    <th>Número Único de Material</th>
+                    <th>Nombre</th>
+                    <th>Precio Compra</th>
+                    <th>Precio Venta</th>
+                    <th>Estátus</th>
+                </tr>
+            </thead>
+            <tbody id="tblMateriales">
+
+            </tbody>
+        </table>
+    </center>
+</div>

@@ -1,0 +1,34 @@
+<center>
+    <div class="card col-lg-5 m-4 p-4" style="border-color: white;">
+        <h2 class="text-center">Registrar Lentes de contacto esteticos</h2>
+        <div class="row g-3" style="padding-bottom: 50px;">
+            <div class="col-md-6">
+                <label for="txtNombreE" class="mt-2 ">Nombre:</label>
+                <input id="txtNombreE" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtFotoE" class="mt-2">Foto</label>
+                <input id="txtFotoE" type="file"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtColorE" class="mt-2">Color:</label>
+                <input id="txtColorE" type="text"  class="mt-2">
+            </div>
+            
+            <div class="col-md-6">
+                <label for="txtMarcaE" class="mt-2 col-12">Marca:</label><br>
+                <input id="txtMarcaE" type="text"  class="mt-2" maxlength="13">
+            </div>
+            <div class="col-md-6">
+                <label for="txtQueratometriaE" class="mt-2">Queratometria:</label>
+                <input id="txtQueratometriaE" type="text"  class="mt-2" maxlength="10">
+            </div>
+           
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloLentesCE.agregarLentesCE()" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloLentesCE.cleanE();" id="btnClean">Limpiar</button>
+        </div>
+    </div>
+</center>

@@ -1,0 +1,18 @@
+[    
+  {
+     "nombre":"lente Graduado",
+      "marca":"Patito",
+      "color":"Rosa",
+      "queratometria":"7.02mm",
+      "foto":"foto",
+      "esferaD":"0",
+      "esferaI":"-2.00",
+      "cilindroD":"0",
+      "cilindroI":"-0.50",
+      "ejeD":"0",
+      "ejeI":"180",
+      "distanciaD":"4.25mm",
+      "distanciaI":"3.25",
+      "estatus":"Activo"
+  }
+]

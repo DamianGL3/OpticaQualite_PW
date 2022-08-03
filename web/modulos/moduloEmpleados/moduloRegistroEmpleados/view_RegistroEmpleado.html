@@ -1,0 +1,74 @@
+<!-- En los metodos ONCLICK es importante LEER el comentario de modulos.js -->
+<!-- En los metodos ONCLICK es importante LEER el comentario de modulos.js -->
+<center>
+    <div class="g-3 row d-flex align-items-center mt-5" style="border-color: white; min-width: 860.75px;">
+        <h2 class="text-center">Registro de Empleado</h2>
+        <div class="col-lg-12 d-flex" style="min-width: 100%;">
+            <div class="col-md-6 d-flex">
+                <label for="txtNumUnico" class="mt-2 ">Número Unico Empleado: </label>
+                <input id="txtNumUnico" type="text"  readonly class="mt-2" disabled>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtNombre" class="col-lg-4 text-center">Nombre:</label>
+                <input id="txtNombre" type="text" class="">
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex" style="min-width: 860.75px">
+            <div class="col-lg-6 d-flex">
+                <label for="txtApePaterno" class="col-lg-4 text-center">Apellido Paterno:</label>
+                <input id="txtApePaterno" type="text" class="">
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtApeMaterno" class="col-lg-4 text-center">Apellido Materno:</label>
+                <input id="txtApeMaterno" type="text" class="">
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex" style="min-width: 860.75px">
+            <div class="col-lg-6 d-flex">
+                <div class="col-md-4">
+                    <label class="mt-2">Género:</label>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select form-select-sm col-md-6" id="txtGenero" name="txtGenero" style="width: 190px; border-color: gray;" disabled>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtRfc" class="col-lg-4 text-center">RFC:</label>
+                <input id="txtRfc" type="text" class="">
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex" style="min-width: 860.75px">
+            <div class="col-lg-6 d-flex">
+                <label for="txtTelefono" class="col-lg-4 text-center">Teléfono Fijo:</label>
+                <input id="txtTelefono" type="text"  class="">
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtMovil" class="col-lg-4 text-center">Teléfono Móvil:</label>
+                <input id="txtMovil" type="text" class="">
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex" style="min-width: 860.75px">
+            <div class="col-lg-6 d-flex">
+                <label for="txtUsuario" class="col-lg-4 text-center">Usuario Empleado:</label>
+                <input id="txtUsuario" type="text"  class="">
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtPassword" class="col-lg-4 text-center">Contraseña Empleado:</label>
+                <input id="txtPassword" type="text" class="">
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-primary btn-lg" onclick="moduloEmpleado.addEmpleado();" id="btnAdd"><img src="../recursos/menu/plus.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Registrar</button>
+            <button class="mt-2 btn btn-danger btn-lg" onclick="moduloEmpleado.clean();" id="btnClean"><img src="../recursos/menu/eraser.svg" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+        </div>
+    </div>
+</center>

@@ -1,0 +1,36 @@
+<center>
+    <div class="card col-lg-5 m-4 p-4" style="border-color: white;">
+        <h2 class="text-center">Modificación de Material</h2>
+        <div class="row g-3" style="padding-bottom: 50px;">
+            <div class="col-md-6">
+                <label for="txtNumUnico" class="mt-2">Número unico de Material</label>
+                <input id="txtNumUnico" type="text"  readonly class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombre" class="mt-2">Nombre(s):</label>
+                <input id="txtNombre" type="text"  class="mt-2" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="txtPrecioC" class="mt-2 col-12">Precio de Compra</label>
+                <input id="txtPrecioC" type="number" type="number" class="mt-2" disabled> 
+            </div>  
+            <div class="col-md-6">
+                <label for="txtPrecioV" class="mt-2">Precio de venta</label>
+                <input id="txtPrecioV" type="number"  type="number" class="mt-2" maxlength="10" disabled>
+            </div>
+            <div class="col-md-6">
+                <label class="mt-2">Estátus:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtEstatus" name="txtEstatus" style="width: 190px; border-color: gray;" disabled>
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloMateriales.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg" onclick="moduloMateriales.updateMaterial();" id="btnUpdate">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg" onclick="moduloMateriales.deleteMaterial();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+</center>

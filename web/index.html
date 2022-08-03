@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Hola -->
+    <head>
+        <title>IDENTIFÍCATE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!----METADATOS ---->
+        <meta name="date" content="27/06/2022">
+        <meta name="copyright" content="2022-20223">
+        <meta name="group" content="DSM302">
+        <meta name="author" content="Componentes Unidos">
+        <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="recursos/LogoQT.png"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="recursos/fonts/font-awesome-4.7/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="recursos/fonts/iconic/css/material-design-iconic-font.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/animate/animate.css">
+        <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/animsition/css/animsition.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/select2/select2.min.css">
+        <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/daterangepicker/daterangepicker.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/util.css">
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/login.css">
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/Style.css"/>
+
+        <!--===============================================================================================-->
+    </head>
+    <body>
+
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('recursos/bg-01.jpg');">
+                <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                        <span class="login100-form-title p-b-49">
+                            IDENTIFICATE
+                        </span>
+                        <span class="login100-form-title p-b-49">
+                            <img src="recursos/LogoQT.png" width="240"  alt="Optica Qualite"/>
+                        </span>
+                        <div class="wrap-input100 validate-input m-b-23" data-validate = "El usuario es requerido!">
+                            <span class="label-input100">Usuario</span>
+                            <input id="txtUser" class="input100" type="text" name="Usuario" placeholder="Ingrese su usuario">
+                            <span class="focus-input100" data-symbol="&#xf206;"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="La contraseña es requerida!">
+                            <span class="label-input100">Password</span>
+                            <input id="txtPass" class="input100" type="password" name="pass" placeholder="Ingrese su contraseña">
+                            <span class="focus-input100" data-symbol="&#xf190;"></span>
+                        </div>
+
+                        <div class="text-right p-t-8 p-b-31">
+                            <p id="passMsg" style="color: red;"></p>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn" onclick="login()">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="flex-c-m">
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--===============================================================================================-->
+        <script src="JS/jquery.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="recursos/vendor/animsition/js/animsition.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="recursos/vendor/bootstrap/js/popper.js"></script>
+        <script src="recursos/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="recursos/vendor/select2/select2.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="recursos/vendor/daterangepicker/moment.min.js"></script>
+        <script src="recursos/vendor/daterangepicker/daterangepicker.js"></script>
+        <!--===============================================================================================-->
+        <script src="recursos/vendor/countdowntime/countdowntime.js"></script>
+        <script src="JS/loadingLogin.js"></script>
+        <!--===============================================================================================-->
+
+    </body>
+</html>

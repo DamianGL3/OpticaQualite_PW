@@ -1,0 +1,27 @@
+<!-- En los metodos ONCLICK es importante LEER el comentario de modulos.js -->
+<div class="card col-lg-12" style="margin-bottom: 10px; border-color: white; min-width: 860.75px;">
+    <center>
+        <div class="d-flex m-3">
+            <label for="txtBuscarEmpleado" class="form-label mx-3" style="border-style: solid; border-color: white;">Buscar Empleados</label>
+            <input type="text" id="txtBuscarEmpleado" placeholder="Ingrese cualquier campo...">
+            <button class="btn btn-primary mx-2" onclick="moduloEmpleado.searchEmpleado();">Buscar</button>
+            <button class="btn btn-danger mx-2" onclick="moduloEmpleado.loadTabla(),moduloEmpleado.boton()">Borrar Filtro</button>
+
+        </div>
+        <table class="table table-hover">
+            <thead class="table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Género</th>
+                    <th>Teléfono Móvil</th>
+                    <th>Correo</th>
+                    <th>Estátus</th>
+                </tr>
+            </thead>
+            <tbody id="tblEmpleados">
+
+            </tbody>
+        </table>
+    </center>
+</div>

@@ -1,0 +1,10 @@
+[    
+    {
+    "nombre":"Cajón de Lente",
+    "marca":"HugoBoss",
+    "precio_c":"$123",
+    "precio_v":"$125",
+    "existencias":20,
+    "estatus":"Activo"
+    }
+]

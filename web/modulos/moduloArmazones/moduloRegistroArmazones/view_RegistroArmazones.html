@@ -1,0 +1,71 @@
+<center>
+    <div class="g-3 row d-flex align-items-center mt-5">
+        <h2 class="text-center">Registro de Armazón</h2>
+        <div class="col-12 d-flex">
+            <div class="col-6 d-flex">
+                <label for="txtNombre" class="col-4 text-center">Nombre:</label>
+                <input id="txtNombre" type="text" class="">
+            </div>
+            <div class="col-6 d-flex">
+                <label for="txtPrecioC" class="col-4 text-center">Precio de Compra:</label>
+                <input id="txtPrecioC" type="number" class="">
+            </div>
+        </div>
+        <div class="col-12 d-flex">
+            <div class="col-6 d-flex">
+                <label for="txtMarca" class="col-4 text-center">Marca:</label>
+                <input id="txtMarca" type="text"  class="">
+            </div>
+            <div class="col-6 d-flex">
+                <label for="txtPrecioV" class="col-4 text-center">Precio de Venta:</label>
+                <input id="txtPrecioV" type="number" class="">
+            </div>
+        </div>
+
+        <div class="col-12 d-flex">
+            <div class="col-6 d-flex">
+                <label for="txtModelo" class="col-4 text-center">Modelo:</label>
+                <input id="txtModelo" type="text"  class="">
+            </div>
+            <div class="col-6 d-flex">
+                <label for="txtExistencias" class="col-4 text-center">Existencias:</label>
+                <input id="txtExistencias" type="number" class="">
+            </div>
+        </div>
+
+        <div class="col-12 d-flex">
+            <div class="col-6 d-flex">
+                <label for="txtColor" class="col-4 text-center">Color:</label>
+                <input id="txtColor" type="text"  class="">
+            </div>
+            <div class="col-6 d-flex">
+                <label for="txtDimensiones" class="col-4 text-center">Dimensiones:</label>
+                <input id="txtDimensiones" type="text" class="">
+            </div>
+        </div>
+
+        <div class="col-12 d-flex">
+            <div class="col-6 d-flex">
+                <label for="txtDescripcion" class="col-4 text-center">Descripción:</label>
+                <input id="txtDescripcion" type="text"  class="">
+            </div>
+            <div class="col-6 d-flex">
+                <div class="col-6">
+                    <img src="../recursos/codigo_barras.png" width="200"/>
+                    <h6>Codigo de Barras</h6>
+                </div>
+                <div class="col-4">
+                    <img src="../recursos/lentes.png" width="200"/>
+                    <h6>Fotografia</h6>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-around mt-2">
+            <center>
+                <button class="mt-2 btn btn-success btn-lg" style="margin-right: 80px" onclick="moduloArmazones.addArmazon();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloArmazones.clean();" id="btnClean">Limpiar</button>
+            </center>
+        </div>
+    </div>
+</center>
